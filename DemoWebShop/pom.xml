@@ -32,4 +32,24 @@
 			<version>LATEST</version>
 		</dependency>
 	</dependencies>
+	<profiles>
+	<profile>
+			<id>multiplesuites</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.3.0</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>systemSuite.xml</suiteXmlFile>
+								<suiteXmlFile>smokeSuite.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

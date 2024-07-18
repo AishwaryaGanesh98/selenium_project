@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\prema\AppData\Local\Temp\testng-eclipse--1151631242\testng-customsuite.xml</span>
+                    <span>C:\Users\prema\AppData\Local\Temp\testng-eclipse--1851244786\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="books.TC_DWS_005_Test" class="method navigator-link" hash-for-method="clickOnBooks">clickOnBooks</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="electronics.TC_DWS_008_Test" class="method navigator-link" hash-for-method="clickOnElectronics">clickOnElectronics</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,21 +121,21 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">books.TC_DWS_005_Test</span>
+              <span class="class-name">electronics.TC_DWS_008_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnBooks">
-                  </a> <!-- clickOnBooks -->
-                  <span class="method-name">clickOnBooks</span>
-                  <div class="stack-trace">java.lang.AssertionError: Books page is not displayed expected [Demo Web Shop. Books] but found [Books]
+                  <a name="clickOnElectronics">
+                  </a> <!-- clickOnElectronics -->
+                  <span class="method-name">clickOnElectronics</span>
+                  <div class="stack-trace">java.lang.AssertionError: Electronics page is not displayed expected [Demo Web Shop. Electronics] but found [Electronics]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
-	at books.TC_DWS_005_Test.clickOnBooks(TC_DWS_005_Test.java:21)
+	at electronics.TC_DWS_008_Test.clickOnElectronics(TC_DWS_008_Test.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prema\AppData\Local\Temp\testng-eclipse--1151631242\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prema\AppData\Local\Temp\testng-eclipse--1851244786\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,11 +182,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;books.TC_DWS_005_Test&quot;&gt;
+      &lt;class name=&quot;electronics.TC_DWS_008_Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;clickOnBooks&quot;/&gt;
+          &lt;include name=&quot;clickOnElectronics&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- books.TC_DWS_005_Test --&gt;
+      &lt;/class&gt; &lt;!-- electronics.TC_DWS_008_Test --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -210,6 +210,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">clickOnElectronics</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -228,14 +236,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickOnBooks')
-data.setCell(0, 2, 'books.TC_DWS_005_Test')
-data.setCell(0, 3, 1721);
+data.setCell(0, 1, 'clickOnElectronics')
+data.setCell(0, 2, 'electronics.TC_DWS_008_Test')
+data.setCell(0, 3, 2506);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -261,36 +269,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">books.TC_DWS_005_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">electronics.TC_DWS_008_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">configReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">900 ms</span>
+                <span class="method-start">738 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">login(public void books.TC_DWS_005_Test.clickOnBooks() throws java.io.IOException)</span>
-                <span class="method-start">17960 ms</span>
+                <span class="method-name">login(public void electronics.TC_DWS_008_Test.clickOnElectronics() throws java.io.IOException)</span>
+                <span class="method-start">13733 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">clickOnBooks</span>
-                <span class="method-start">22065 ms</span>
+                <span class="method-name">clickOnElectronics</span>
+                <span class="method-start">28145 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">24000 ms</span>
+                <span class="method-start">31238 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">24952 ms</span>
+                <span class="method-start">33264 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">reportBackup</span>
-                <span class="method-start">25806 ms</span>
+                <span class="method-start">36596 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

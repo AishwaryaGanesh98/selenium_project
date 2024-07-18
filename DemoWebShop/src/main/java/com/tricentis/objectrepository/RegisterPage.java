@@ -65,4 +65,11 @@ public class RegisterPage {
 	public WebElement getRegisterButton() {
 		return registerButton;
 	}
+	
+	@FindBy(xpath = "//div[contains(text(),'Your registration completed')] ")
+	private WebElement confirmMessage;
+
+	public WebElement getConfirmMessage() {
+	    return confirmMessage;
+	}
 }
